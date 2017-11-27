@@ -1,0 +1,5 @@
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Models\bin\Debug\ProductivityCoach.Models.dll
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Models\bin\Debug\ProductivityCoach.Models.pdb
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Models\obj\Debug\ProductivityCoach.Models.csprojResolveAssemblyReference.cache
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Models\obj\Debug\ProductivityCoach.Models.dll
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Models\obj\Debug\ProductivityCoach.Models.pdb

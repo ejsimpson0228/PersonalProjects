@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/PCStyleSheet.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @*<div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-inverse p-4">
+
+                <h4 class="text-white">TEST</h4>*@
+
+
+
+    @*<nav class="navbar navbar-inverse bg-inverse">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>*@
+
+
+    <div class="row head-row">
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-inverse p-4">
+                    <div class="navbar navbar-inverse navbar-fixed-top">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                @Html.ActionLink("Productivity Coach", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
+                                    <li>@Html.ActionLink("Tasks", "Index", "Tasks", new { area = "" }, null)</li>
+                                    <li>@Html.ActionLink("Reports", "Index", "Help", new { area = "" }, null)</li>
+                                    <li>@Html.ActionLink("About", "Index", "About", new { area = "" }, null)</li>
+                                    @Html.Partial("_LoginPartial")
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar">
+                <button class="btn menu-Button" id="menuButton" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="glyphicon glyphicon-tasks" id="menuButtonText"> MENU</span>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

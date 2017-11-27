@@ -1,0 +1,14 @@
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Data\bin\Debug\ProductivityCoach.Data.dll
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Data\bin\Debug\ProductivityCoach.Data.pdb
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Data\bin\Debug\ProductivityCoach.Models.dll
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Data\bin\Debug\ProductivityCoach.Models.pdb
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Data\obj\Debug\ProductivityCoach.Data.csprojResolveAssemblyReference.cache
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Data\obj\Debug\ProductivityCoach.Data.dll
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\Clone\PersonalProjects\ProductivityCoach\ProductivityCoach.Data\obj\Debug\ProductivityCoach.Data.pdb
+C:\Users\ejsim\OneDrive\Documents\Visual Studio 2017\Projects\ProductivityCoach\ProductivityCoach.Data\bin\Debug\ProductivityCoach.Data.dll
+C:\Users\ejsim\OneDrive\Documents\Visual Studio 2017\Projects\ProductivityCoach\ProductivityCoach.Data\bin\Debug\ProductivityCoach.Data.pdb
+C:\Users\ejsim\OneDrive\Documents\Visual Studio 2017\Projects\ProductivityCoach\ProductivityCoach.Data\bin\Debug\ProductivityCoach.Models.dll
+C:\Users\ejsim\OneDrive\Documents\Visual Studio 2017\Projects\ProductivityCoach\ProductivityCoach.Data\bin\Debug\ProductivityCoach.Models.pdb
+C:\Users\ejsim\OneDrive\Documents\Visual Studio 2017\Projects\ProductivityCoach\ProductivityCoach.Data\obj\Debug\ProductivityCoach.Data.csprojResolveAssemblyReference.cache
+C:\Users\ejsim\OneDrive\Documents\Visual Studio 2017\Projects\ProductivityCoach\ProductivityCoach.Data\obj\Debug\ProductivityCoach.Data.dll
+C:\Users\ejsim\OneDrive\Documents\Visual Studio 2017\Projects\ProductivityCoach\ProductivityCoach.Data\obj\Debug\ProductivityCoach.Data.pdb
