@@ -1,4 +1,5 @@
-﻿
+﻿@model List<ProductivityCoach.Models.ViewModels.MyTask>
+
 @{
     ViewBag.Title = "Index";
 }
@@ -9,6 +10,55 @@
 }
 else
 {
-    
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <h3>@User.Identity.Name's Tasks</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <h3>Current Date</h3>
+            <p>@DateTime.Today.ToString("MM/dd/yyyy")</p>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6">
+            <h4>My Checklists</h4>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+            <h4>My Time Grinds</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6">
+            <form class="form form-control">
+                @foreach (var MyTask in Model)
+                {
+                    @Html.CheckBoxFor(m => m.)
+                    @*if (MyTask.TypeName == "Checklist")
+                    {
+                        <input type="checkbox" id="checklistTask"><label for="checklistTask"> @MyTask.TaskName</label>
+                    }*@
+                }
+                <div class="row">
+                    <button type="submit" class="btn btn-success">Did 'em</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+            <select class="form-control" id="priceMin">
+                @foreach (var MyTask in Model)
+                {
+                    if (MyTask.TypeName == "TimeGrind")
+                    {
+                        <option>@MyTask.TaskName</option>
+                    }
+                }
+            </select>
+        </div>
+    </div>
+
 }
 

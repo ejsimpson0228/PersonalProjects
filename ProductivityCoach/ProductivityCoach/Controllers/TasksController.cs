@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using ProductivityCoach.Data.ADORepository;
 using ProductivityCoach.Models;
+using ProductivityCoach.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,13 +16,25 @@ namespace ProductivityCoach.Controllers
         // GET: Tasks
         public ActionResult Index()
         {
+            string userId = string.Empty;
             if (Request.IsAuthenticated)
             {
                 var userMgr = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
                 var user = userMgr.FindByName(User.Identity.Name);
                 ViewBag.UserId = user.Id;
+                userId = user.Id;
             }
-            return View();
+            var repo = new MyTaskRepo();
+
+            if (userId.Length > 0)
+            {
+                List<MyTask> model = repo.GetTasksForUser(userId).ToList();
+                return View(model);
+            }
+            else
+                return View();
         }
+
+        
     }
 }
