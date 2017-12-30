@@ -35,11 +35,12 @@ else
             <form class="form form-control">
                 @foreach (var MyTask in Model)
                 {
-                    @Html.CheckBoxFor(MyTask)
-                    @*if (MyTask.TypeName == "Checklist")
+                   
+                    @*@Html.CheckBoxFor(MyTask.TaskName, MyTask.IsComplete)*@
+                    if (MyTask.TypeName == "Checklist")
                     {
                         <input type="checkbox" id="checklistTask"><label for="checklistTask"> @MyTask.TaskName</label>
-                    }*@
+                    }
                 }
                 <div class="row">
                     <button type="submit" class="btn btn-success">Did 'em</button>
