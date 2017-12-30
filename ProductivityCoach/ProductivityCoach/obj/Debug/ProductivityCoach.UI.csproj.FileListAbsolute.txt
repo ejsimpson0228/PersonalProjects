@@ -129,12 +129,6 @@ c:\Users\ejsim\OneDrive\Documents\Visual Studio 2017\Projects\ProductivityCoach\
 c:\Users\ejsim\OneDrive\Documents\Visual Studio 2017\Projects\ProductivityCoach\ProductivityCoach\obj\Debug\ProductivityCoach.Migrations.InitialCreate.resources
 c:\Users\ejsim\OneDrive\Documents\Visual Studio 2017\Projects\ProductivityCoach\ProductivityCoach\obj\Debug\ProductivityCoach.UI.csproj.GenerateResource.Cache
 c:\Users\ejsim\OneDrive\Documents\Visual Studio 2017\Projects\ProductivityCoach\ProductivityCoach\obj\Debug\ProductivityCoach.Migrations.init.resources
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\System.IO.Compression.dll
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\VBCSCompiler.exe
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\ApplicationInsights.config
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\ProductivityCoach.dll.config
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\ProductivityCoach.dll
@@ -146,9 +140,13 @@ C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\Produ
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\csi.exe.config
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\csi.rsp
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\Microsoft.Win32.Primitives.dll
@@ -158,6 +156,7 @@ C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\Produ
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\System.Diagnostics.Process.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\System.IO.Compression.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\System.IO.FileSystem.Primitives.dll
@@ -180,6 +179,7 @@ C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\Produ
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\vbc.exe
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\vbc.exe.config
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\vbc.rsp
+C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\VBCSCompiler.exe
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\Antlr3.Runtime.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach\bin\EntityFramework.dll
