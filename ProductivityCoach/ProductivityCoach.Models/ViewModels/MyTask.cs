@@ -18,5 +18,6 @@ namespace ProductivityCoach.Models.ViewModels
         public DateTime? DueDate { get; set; }
         public TimeSpan? TotalTime { get; set; }
         public string UserId { get; set; }
+        public bool IsComplete { get; set; }
     }
 }
