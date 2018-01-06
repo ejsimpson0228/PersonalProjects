@@ -73,6 +73,7 @@ namespace ProductivityCoach.Data.ADORepository
                 cmd.Parameters.AddWithValue("@DurationUnit", task.DurationUnit);
                 cmd.Parameters.AddWithValue("@DueDate", task.DueDate);
 
+
                 cn.Open();
 
                 cmd.ExecuteNonQuery();
