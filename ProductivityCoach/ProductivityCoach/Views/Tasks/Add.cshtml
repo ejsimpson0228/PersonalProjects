@@ -1,0 +1,194 @@
+﻿@model ProductivityCoach.Models.AddTaskViewModel
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add Task</h2>
+@using (@Html.BeginForm("Add", "Tasks", FormMethod.Post, new { @id = "addTaskForm" }))
+{
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-8" id="taskNameQuestion">
+            <div class="form-group">
+                <label>
+                    What do you want to do?
+                </label>
+                @Html.TextBoxFor(m => m.myTask.TaskName, new { @style = "width: 2000px", @Placeholder = "Type the name of your task here" , @id = "nameInput" , @oninput = "enableButton()" })
+                <button disabled class="form-inline btn btn-xs btn-success" id="taskNameButton" type="button" data-toggle="tooltip" data-placement="top" title="Submit" onclick="toggleVisibility('nameInput', 'taskType')">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </button> 
+            </div>
+
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-offset-5 col-md-7" id="taskTypeQuestion">
+            <div class="form-group" id="taskType" style="visibility:hidden">
+                <label>
+                    What kind of task is this?
+                </label>
+                @Html.DropDownListFor(m => m.myTask.TypeName, Model.TypeNames, "--Select--", new { @class = "form-inline" })
+                <button class="form-inline btn btn-xs btn-success" id="taskTypeButton" type="button"  data-toggle="tooltip" data-placement="top" title="Submit" onclick="fillInQuestion()">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </button> 
+                <button class="form-inline btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-thumbs-down"></span>
+                </button> 
+                <button class="form-inline btn btn-xs btn-default">
+                    <span class="glyphicon glyphicon-question-sign"></span>
+                </button> 
+            </div>
+            
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-10">
+            <div class="form-group" id="howOften">
+                <label>
+                    How often will you complete this task? Every: 
+                </label>
+                @Html.DropDownListFor(m => m.myTask.CompleteEveryTimeUnit, Model.CompleteEveryTimeUnits, "--Select--", new { @class = "form-inline"})
+                <button class="form-inline btn btn-xs btn-success">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </button>
+                <button class="form-inline btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-thumbs-down"></span>
+                </button>
+                <button class="form-inline btn btn-xs btn-default">
+                    <span class="glyphicon glyphicon-question-sign"></span>
+                </button>
+            </div>
+
+            <div class="form-group" id="howLong">
+                <label id="question">
+                    How long to you want to 
+                </label>
+                @Html.TextBoxFor(m => m.myTask.DurationNumber, new { @class = "form-inline" , @type="number" })
+                @Html.DropDownListFor(m => m.myTask.DurationUnit, Model.DurationUnits, "--Select--", new { @class = "form-inline" })
+                <button class="form-inline btn btn-xs btn-success">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </button>
+                <button class="form-inline btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-thumbs-down"></span>
+                </button>
+                <button class="form-inline btn btn-xs btn-default">
+                    <span class="glyphicon glyphicon-question-sign"></span>
+                </button>
+            </div>
+
+            <div class="form-group" id="completeWhen">
+                <label>
+                    When do you want to complete this by?
+                </label>
+                @Html.TextBoxFor(m => m.myTask.DueDate, new { @type = "Date" })
+                <button class="form-inline btn btn-xs btn-success">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </button>
+                <button class="form-inline btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-thumbs-down"></span>
+                </button>
+                <button class="form-inline btn btn-xs btn-default">
+                    <span class="glyphicon glyphicon-question-sign"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-offset-5 col-md-7">
+            <div class="form-group" id="howManyTimes">
+                <label>
+                    How many times per [TimeUnit]?
+                </label>
+                @Html.TextBoxFor(m => m.myTask.CompleteEveryNumber, new { @class = "form-inline" , @type="number"})
+                <button class="form-inline btn btn-xs btn-success">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </button>
+                <button class="form-inline btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-thumbs-down"></span>
+                </button>
+                <button class="form-inline btn btn-xs btn-default">
+                    <span class="glyphicon glyphicon-question-sign"></span>
+                </button>
+            </div>
+            <div class="form-group" id="howOftenYouDo">
+                <label>
+                    How often will you [TaskName] for [Number] [TimeUnit](s)? Every: 
+                </label>
+                @Html.DropDownListFor(m => m.myTask.CompleteEveryTimeUnit, Model.CompleteEveryTimeUnits, "--Select--", new { @class = "form-inline" })
+                <button class="form-inline btn btn-xs btn-success">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </button>
+                <button class="form-inline btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-thumbs-down"></span>
+                </button>
+                <button class="form-inline btn btn-xs btn-default">
+                    <span class="glyphicon glyphicon-question-sign"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-offset-2 col-md-8">
+            <div class="form-group">
+                <label style="display:block">You want to [taskName] [number] time(s) every [timeUnit]?</label>
+                <label style="display:block">You want to [taskName] for [Number] [timeUnit](s)?</label>
+                <label style="display:block">You want to [taskName] for [Number] [timeUnit](s) every [largeUnit]?</label>
+                <label style="display: block">You want to [taskName] by [dueDate]?</label>
+                <br />
+                <div class="col-xs-12 col-sm-8 col-md-offset-4 col-md-6">
+                    <br />
+                    <button type="submit" class="btn btn-success">That's right!</button>
+                    <button type="reset" class="btn btn-danger">Start Over</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts
+{
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        function toggleVisibility(thisQuestionId, nextQuestionId) {
+            var nextQuestion = document.getElementById(nextQuestionId);
+            
+            if (nextQuestion.style.visibility == "hidden") {
+                nextQuestion.style.visibility = "visible";
+            }
+            if (document.getElementById(thisQuestionId).disabled == false) {
+                document.getElementById(thisQuestionId).disabled = true;
+            }
+        }
+
+        function fillInQuestion() {
+            var word = document.getElementById("nameInput").value;
+            $('#question').append(word + '?');
+        }
+
+       function enableButton() {
+           var text = document.getElementById("nameInput").value;
+           if (text != '') {
+               document.getElementById("taskNameButton").disabled = false;
+           }
+           else {
+               document.getElementById("taskNameButton").disabled = true;
+           }
+       }
+
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+}

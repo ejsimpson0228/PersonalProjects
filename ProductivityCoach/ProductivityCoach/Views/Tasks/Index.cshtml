@@ -32,33 +32,103 @@ else
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-6">
-            <form class="form form-control">
+            <form>
                 @foreach (var MyTask in Model)
                 {
-                   
-                    @*@Html.CheckBoxFor(MyTask.TaskName, MyTask.IsComplete)*@
                     if (MyTask.TypeName == "Checklist")
                     {
-                        <input type="checkbox" id="checklistTask"><label for="checklistTask"> @MyTask.TaskName</label>
+                        <div class="checkbox">
+                            <label>
+                                @Html.CheckBoxFor(m => MyTask.IsComplete) @MyTask.TaskName 
+                            </label>
+                        </div>
                     }
+
                 }
+
                 <div class="row">
-                    <button type="submit" class="btn btn-success">Did 'em</button>
+                    <button type="submit" class="btn btn-success">Did 'Em</button>
                 </div>
             </form>
 
         </div>
         <div class="col-xs-12 col-sm-8 col-md-6">
-            <select class="form-control" id="priceMin">
+            <form>
+                <select class="form-control">
+                    @foreach (var MyTask in Model)
+                    {
+                        if (MyTask.TypeName == "TimeGrind")
+                        {
+                            <option>@MyTask.TaskName</option>
+                        }
+                    }
+
+
+                </select>
+                <br />
+                <button type="submit" class="btn btn-info">Start Grinding</button>
+            </form>
+        </div>
+
+    </div>
+    <br />
+    <br/>
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6">
+            <h4>My Countdowns</h4>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+            <h4>Upcoming Due Dates</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6">
+            <form>
                 @foreach (var MyTask in Model)
                 {
-                    if (MyTask.TypeName == "TimeGrind")
+                    if (MyTask.TypeName == "Countdown")
                     {
-                        <option>@MyTask.TaskName</option>
+                            <label>
+                                @Html.RadioButtonFor(m => MyTask.TaskId, MyTask.TaskId) @MyTask.TaskName @("(" + MyTask.DurationNumber + " " + MyTask.DurationUnit + "s)" )
+                            </label>
+                        
                     }
+
                 }
-            </select>
+
+                <div class="row">
+                    <button type="button" class="btn btn-primary">Start Countdown</button>
+                </div>
+            </form>
+
         </div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+            <form>
+                    @foreach (var MyTask in Model)
+                    {
+                        if (MyTask.TypeName == "CompleteBy")
+                        {
+                            <label>
+                                @Html.RadioButtonFor(m => MyTask.TaskId, MyTask.TaskId) @MyTask.TaskName  @MyTask.DueDate.Value.ToString("MM/dd/yyyy")
+                            </label>
+                        }
+                    }
+
+                <br />
+                <button type="submit" class="btn btn-warning">Turn IN</button>
+                <button type="submit" class="btn btn-danger">Cancel Task</button>
+            </form>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            @Html.ActionLink("Add a Task", "Add", "Task", new { @class = "btn btn-block btn-success"})
+        </div> 
+        <div class="col-xs-12 col-md-6">
+            <button type="button" class="btn btn-block btn-danger">Delete a Task</button>
+        </div> 
     </div>
 
 }
