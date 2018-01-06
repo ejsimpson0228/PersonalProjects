@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using ProductivityCoach.Data.ADORepository;
 using ProductivityCoach.Models;
+using ProductivityCoach.Models.Details;
 using ProductivityCoach.Models.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -137,6 +138,32 @@ namespace ProductivityCoach.Tests
             Assert.AreEqual(4, tasks.Count());
         }
 
+        [Test]
+        public void CanLoadTaskTypes()
+        {
+            TaskDetails details = new TaskDetails();
+            List<Models.Details.Type> TaskTypes = details.GetTaskTypes().ToList();
+
+            Assert.AreEqual(4, TaskTypes.Count());
+        }
+
+        [Test]
+        public void CanLoadDurationUnits()
+        {
+            TaskDetails details = new TaskDetails();
+            List<Duration> DurationUnits = details.GetDurationsUnits().ToList();
+
+            Assert.AreEqual(3, DurationUnits.Count());
+        }
+
+        [Test]
+        public void CanLoadTimeUnits()
+        {
+            TaskDetails details = new TaskDetails();
+            List<Time> TimeUnits = details.GetTimeUnits().ToList();
+
+            Assert.AreEqual(4, TimeUnits.Count());
+        }
 
     }
 

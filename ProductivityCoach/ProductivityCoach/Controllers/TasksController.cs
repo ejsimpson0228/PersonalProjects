@@ -35,6 +35,19 @@ namespace ProductivityCoach.Controllers
                 return View();
         }
 
+        public ActionResult Add() 
+        {
+            var model = new AddTaskViewModel();
+            var details = new TaskDetails();
+            model.CompleteEveryTimeUnits = new SelectList(details.GetTimeUnits(), "CompleteEveryTimeUnit", "CompleteEveryTimeUnit");
+            model.DurationUnits = new SelectList(details.GetDurationsUnits(), "DurationUnit", "DurationUnit");
+            model.TypeNames = new SelectList(details.GetTaskTypes(), "TypeName", "TypeName");
+
+            return View(model);
+        }
+
+        
+
         
     }
 }
