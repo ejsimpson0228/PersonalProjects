@@ -1,5 +1,5 @@
 C:\Users\Eric\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach.Models\bin\Debug\ProductivityCoach.Models.dll
 C:\Users\Eric\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach.Models\bin\Debug\ProductivityCoach.Models.pdb
-C:\Users\Eric\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach.Models\obj\Debug\ProductivityCoach.Models.csprojResolveAssemblyReference.cache
 C:\Users\Eric\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach.Models\obj\Debug\ProductivityCoach.Models.dll
 C:\Users\Eric\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach.Models\obj\Debug\ProductivityCoach.Models.pdb
+C:\Users\Eric\Documents\Repos\PersonalProjects\ProductivityCoach\ProductivityCoach.Models\obj\Debug\ProductivityCoach.Models.csprojResolveAssemblyReference.cache
