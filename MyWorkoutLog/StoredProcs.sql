@@ -69,7 +69,7 @@ CREATE PROCEDURE spInputExerciseNumbers (
 	@Sets INT,
 	@Reps INT ,
 	@Time TIME ,
-	@Distance INT ,
+	@Distance DECIMAL ,
 	@DistanceUnit VARCHAR(10),
 	@Weight INT 
 )
@@ -261,3 +261,4 @@ AS
 			
 	END
 GO
+
