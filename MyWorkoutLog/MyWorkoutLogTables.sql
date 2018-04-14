@@ -37,7 +37,7 @@ CREATE TABLE ExerciseDetails (
 	[Sets] INT  NULL,
 	Reps INT  NULL,
 	[Time] TIME  NULL,
-	Distance INT  NULL,
+	Distance DECIMAL  NULL,
 	DistanceUnit VARCHAR(10) NULL,
 	[Weight] INT  NULL
 )
