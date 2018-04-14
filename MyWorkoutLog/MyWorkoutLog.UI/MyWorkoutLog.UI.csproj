@@ -239,7 +239,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -294,6 +296,16 @@
     <EmbeddedResource Include="Migrations\201804021316442_init.resx">
       <DependentUpon>201804021316442_init.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyWorkoutLog.Data\MyWorkoutLog.Data.csproj">
+      <Project>{a42b5fd4-f315-4fc3-a056-fd2116c3dee0}</Project>
+      <Name>MyWorkoutLog.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWorkoutLog.Models\MyWorkoutLog.Models.csproj">
+      <Project>{dc94788c-4f81-4e06-b4d9-736131f13566}</Project>
+      <Name>MyWorkoutLog.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
