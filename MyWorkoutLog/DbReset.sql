@@ -23,16 +23,16 @@ CREATE PROCEDURE DbReset as
 		SET IDENTITY_INSERT Workout OFF
 
 		SET IDENTITY_INSERT Exercise ON
-		INSERT INTO Exercise (ExerciseId, ExerciseName, TracksSets, [Sets], TracksReps, Reps, TracksTime, [Time], 
-			TracksDistance, Distance, DistanceUnit, TracksWeight, [Weight], UserId)
-		VALUES (1, 'Curls', 1, null, 1, null, 0, null, 0, null, null, 1, null, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
-		(2, 'Deadlift', 1, null, 1, null, 0, null, 0, null, null, 1, null, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
-		(3, 'Lunges', 1, null, 1, null, 0, null, 0, null, null, 1, null, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
-		(4, 'Side Planks', 1, null, 1, null, 1, null, 0, null, null, 0, null, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
-		(5, 'Jogging', 0, null, 0, null, 1, null, 1, null, null, 0, null, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
-		(6, 'Bench Press', 1, null, 1, null, 0, null, 0, null, null, 1, null, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
-		(7, 'Squats', 1, null, 1, null, 0, null, 0, null, null, 1, null, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
-		(8, 'Squats', 1, null, 1, null, 0, null, 0, null, null, 1, null, 'ade77a5f-1eb2-41bb-806d-3f2ef0713de9')
+		INSERT INTO Exercise (ExerciseId, ExerciseName, TracksSets,  TracksReps,  TracksTime,  
+			TracksDistance,  TracksWeight,  UserId)
+		VALUES (1, 'Curls', 1,   1,   0,   0,     1,   '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
+		(2, 'Deadlift', 1,   1,   0,   0,     1,   '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
+		(3, 'Lunges', 1,   1,   0,   0,     1,   '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
+		(4, 'Side Planks', 1,   1,   1,   0,     0,   '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
+		(5, 'Jogging', 0,   0,   1,   1,     0,   '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
+		(6, 'Bench Press', 1,   1,   0,   0,     1,   '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
+		(7, 'Squats', 1,   1,   0,   0,     1,   '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
+		(8, 'Squats', 1,   1,   0,   0,     1,   'ade77a5f-1eb2-41bb-806d-3f2ef0713de9')
 		SET IDENTITY_INSERT Exercise OFF
 
 		INSERT INTO WorkoutExercise (WorkoutId, ExerciseId, [Day])

@@ -5,10 +5,15 @@ if exists(select * from sys.tables where name='WorkoutExercise')
 	drop table WorkoutExercise
 	go
 
+if exists(select * from sys.tables where name='ExerciseDetails')
+	drop table ExerciseDetails
+	go
 
 if exists(select * from sys.tables where name='Exercise')
 	drop table Exercise
 	go
+
+
 
 if exists(select * from sys.tables where name='Workout')
 	drop table Workout
@@ -19,18 +24,22 @@ CREATE TABLE Exercise(
 	ExerciseId INT IDENTITY PRIMARY KEY NOT NULL,
 	ExerciseName VARCHAR(50) NOT NULL,
 	TracksSets BIT NOT NULL,
-	[Sets] INT  NULL,
 	TracksReps BIT NOT NULL,
-	Reps INT  NULL,
 	TracksTime BIT NOT NULL,
-	[Time] INT  NULL,
 	TracksDistance BIT NOT NULL,
+	TracksWeight BIT NOT NULL,
+	UserId NVARCHAR(100) NOT NULL
+)
+
+CREATE TABLE ExerciseDetails (
+	ExerciseDetailsId INT IDENTITY PRIMARY KEY NOT NULL,
+	ExerciseId INT FOREIGN KEY REFERENCES Exercise(ExerciseId) NOT NULL,
+	[Sets] INT  NULL,
+	Reps INT  NULL,
+	[Time] TIME  NULL,
 	Distance INT  NULL,
 	DistanceUnit VARCHAR(10) NULL,
-	TracksWeight BIT NOT NULL,
-	[Weight] INT  NULL,
-	
-	UserId NVARCHAR(100) NOT NULL
+	[Weight] INT  NULL
 )
 
 
@@ -50,4 +59,4 @@ CREATE TABLE WorkoutExercise(
 	[Day] INT NOT NULL
 )
 
-exec dbreset
+exec DbReset
