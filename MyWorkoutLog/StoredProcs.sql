@@ -149,6 +149,25 @@ AS
 	END
 GO
 
+if exists(select * from sys.procedures where name='spDropExerciseForUser')
+	drop procedure spDropExerciseForUser
+	go
+
+CREATE PROCEDURE spDropExerciseForUser  (
+	@UserId NVARCHAR(100),
+	@ExerciseId INT
+)
+AS 
+	BEGIN
+		
+		UPDATE Exercise
+		SET UserId = null
+		WHERE ExerciseId = @ExerciseId
+		AND UserId = @UserId
+			
+	END
+GO
+
 
 if exists(select * from sys.procedures where name='spAddWorkoutForUser')
 	drop procedure spAddWorkoutForUser

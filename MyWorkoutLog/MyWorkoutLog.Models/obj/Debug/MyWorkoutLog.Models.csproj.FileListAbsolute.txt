@@ -1,6 +1,0 @@
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Models\bin\Debug\MyWorkoutLog.Models.dll
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Models\bin\Debug\MyWorkoutLog.Models.pdb
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Models\obj\Debug\MyWorkoutLog.Models.csprojResolveAssemblyReference.cache
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Models\obj\Debug\MyWorkoutLog.Models.csproj.CoreCompileInputs.cache
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Models\obj\Debug\MyWorkoutLog.Models.dll
-C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Models\obj\Debug\MyWorkoutLog.Models.pdb
