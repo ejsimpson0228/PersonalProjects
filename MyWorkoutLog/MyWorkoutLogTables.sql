@@ -59,4 +59,3 @@ CREATE TABLE WorkoutExercise(
 	[Day] INT NOT NULL
 )
 
-exec DbReset
