@@ -36,7 +36,6 @@ namespace MyWorkoutLog.Tests.Tests
         [Test]
         public void CanGetCurrentWorkoutForUser()
         {
-            Settings.GetRepositoryType();
             var workoutRepo = WorkoutRepositoryFactory.GetWorkout();
             Workout workout = workoutRepo.GetCurrentWorkoutForUser("8f4b02ca-4134-451c-ab5e-bd73c6a723b2");
 
