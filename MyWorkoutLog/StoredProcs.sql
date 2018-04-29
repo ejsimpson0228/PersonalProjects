@@ -41,6 +41,7 @@ AS
 		SELECT e.* FROM Workout w
 		JOIN WorkoutExercise we ON w.WorkoutId = we.WorkoutId
 		JOIN Exercise e on we.ExerciseId = e.ExerciseId
+		LEFT JOIN ExerciseDetails ed ON e.ExerciseId = ed.ExerciseId
 		WHERE @WorkoutId = w.WorkoutId
 	END
 GO
@@ -190,24 +191,18 @@ AS
 GO
 
 
-if exists(select * from sys.procedures where name='spGetCurrentWeeklyWorkoutViewForUser')
-	drop procedure spGetCurrentWeeklyWorkoutViewForUser
+if exists(select * from sys.procedures where name='spGetCurrentWeeklyWorkoutForUser')
+	drop procedure spGetCurrentWeeklyWorkoutForUser
 	go
 
-CREATE PROCEDURE spGetCurrentWeeklyWorkoutViewForUser  (
+CREATE PROCEDURE spGetCurrentWeeklyWorkoutForUser  (
 	@UserId NVARCHAR(100)
 )
 AS 
 	BEGIN
-		Select top 1 w.WorkoutName, w.StartDate, w.DaysPerWeek, we.[Day], e.ExerciseId, e.ExerciseName, e.TracksDistance
-		, e.TracksReps, e.TracksSets, e.TracksReps, e.TracksSets, e.TracksTime, e.TracksWeight,
-		ed.*
+		Select  w.*
 		From Workout w
-		JOIN WorkoutExercise we ON w.WorkoutId = we.WorkoutId
-		JOIN Exercise e ON we.ExerciseId = e.ExerciseId
-		JOIN ExerciseDetails ed ON e.ExerciseId = ed.ExerciseId
 		WHERE @UserId = w.UserId
-		AND @UserId = e.UserId
 		AND w.IsCurrent = 1
 		ORDER BY w.StartDate DESC
 			
@@ -216,6 +211,8 @@ GO
 
 
 
+
+--probably not needed, cause it's wrong
 if exists(select * from sys.procedures where name='spGetWorkoutViewForUser')
 	drop procedure spGetWorkoutViewForUser
 	go
@@ -226,13 +223,13 @@ CREATE PROCEDURE spGetWorkoutViewForUser  (
 )
 AS 
 	BEGIN
-		Select top 1 w.WorkoutName, w.StartDate, w.DaysPerWeek, we.[Day], e.ExerciseId, e.ExerciseName, e.TracksDistance
+		Select w.WorkoutId, w.WorkoutName, w.StartDate, w.DaysPerWeek, we.[Day], e.ExerciseId, e.ExerciseName, e.TracksDistance
 		, e.TracksReps, e.TracksSets, e.TracksReps, e.TracksSets, e.TracksTime, e.TracksWeight,
 		ed.*
 		From Workout w
 		JOIN WorkoutExercise we ON w.WorkoutId = we.WorkoutId
 		JOIN Exercise e ON we.ExerciseId = e.ExerciseId
-		JOIN ExerciseDetails ed ON e.ExerciseId = ed.ExerciseId
+		left JOIN ExerciseDetails ed ON e.ExerciseId = ed.ExerciseId
 		WHERE @UserId = w.UserId
 		AND @UserId = e.UserId
 		AND @WorkoutStartDate = w.StartDate

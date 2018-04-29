@@ -44,9 +44,7 @@
     <Compile Include="Models\ExerciseDetails.cs" />
     <Compile Include="Models\Workout.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
+    <Compile Include="ViewModels\WorkoutExercisesViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

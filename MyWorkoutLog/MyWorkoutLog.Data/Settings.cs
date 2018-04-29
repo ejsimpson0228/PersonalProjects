@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyWorkoutLog.Data
+namespace MyWorkoutLog.UI
 {
     public class Settings
     {
@@ -13,12 +13,12 @@ namespace MyWorkoutLog.Data
 
         private static string _repositoryType;
 
-
+        
 
         public static string GetConnectionString()
         {
             if (string.IsNullOrEmpty(_connectionString)) 
-                _connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+                _connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString.ToString();
 
             return _connectionString;
         }

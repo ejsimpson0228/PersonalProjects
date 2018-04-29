@@ -1,4 +1,7 @@
 ﻿using MyWorkoutLog.Data;
+using MyWorkoutLog.Data.Factories;
+using MyWorkoutLog.Models.Models;
+using MyWorkoutLog.UI;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -28,6 +31,16 @@ namespace MyWorkoutLog.Tests.Tests
 
                 cmd.ExecuteNonQuery();
             }
+        }
+
+        [Test]
+        public void CanGetCurrentWorkoutForUser()
+        {
+            Settings.GetRepositoryType();
+            var workoutRepo = WorkoutRepositoryFactory.GetWorkout();
+            Workout workout = workoutRepo.GetCurrentWorkoutForUser("8f4b02ca-4134-451c-ab5e-bd73c6a723b2");
+
+            Assert.AreEqual(2, workout.WorkoutId);
         }
 
 
