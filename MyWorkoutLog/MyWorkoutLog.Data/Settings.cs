@@ -17,8 +17,15 @@ namespace MyWorkoutLog.UI
 
         public static string GetConnectionString()
         {
-            if (string.IsNullOrEmpty(_connectionString)) 
-                _connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString.ToString();
+            if (string.IsNullOrEmpty(_connectionString))
+            {
+#if DEBUG
+                _connectionString = ConfigurationManager.ConnectionStrings["DebugConnection"].ConnectionString;
+#else
+                _connectionString = ConfigurationManager.ConnectionStrings["ReleaseConnection"].ConnectionString;
+#endif
+            }
+
 
             return _connectionString;
         }

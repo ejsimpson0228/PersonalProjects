@@ -7,3 +7,12 @@ C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutL
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\obj\Debug\MyWorkoutLog.Data.csproj.CopyComplete
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\obj\Debug\MyWorkoutLog.Data.dll
 C:\Users\ejsim\OneDrive\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\obj\Debug\MyWorkoutLog.Data.pdb
+C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\bin\Debug\MyWorkoutLog.Data.dll
+C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\bin\Debug\MyWorkoutLog.Data.pdb
+C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\bin\Debug\MyWorkoutLog.Models.dll
+C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\bin\Debug\MyWorkoutLog.Models.pdb
+C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\obj\Debug\MyWorkoutLog.Data.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\obj\Debug\MyWorkoutLog.Data.csproj.CoreCompileInputs.cache
+C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\obj\Debug\MyWorkoutLog.Data.csproj.CopyComplete
+C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\obj\Debug\MyWorkoutLog.Data.dll
+C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.Data\obj\Debug\MyWorkoutLog.Data.pdb

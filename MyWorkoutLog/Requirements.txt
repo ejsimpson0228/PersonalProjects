@@ -1,0 +1,23 @@
+Objective: Create an application that simulates a notebook that users can take to the gym to log their numbers for their workout. Users will be able to create their own workouts, name them, and add exercises which they will also be able to create. When creating an exercise, users will be able to specify if the exercise should track any combination of sets, reps, weight, time, distance.
+
+The application will track the user's workout numbers historically. Workout weeks will begin on Sundays and end on Saturdays. Every week worked out will be saved in the log, however if no data was entered for a week it will not be saved. Users will have the option to view their last workout at the click of a button while they are logging their numbers for the current week.
+
+For each workout, users will be able to specify how many days per week they will be working out and which exercises will be performed on each day. Users can have multiple workouts associated with their account and can select which one they will be performing for the current week (default will be the one they performed last week).
+
+
+
+
+Currently, the application is in this stage:
+	-Wireframe completed with application layout
+	-Database structure complete with table layout
+	-Stored procedures created in SQL
+	-Data structure set up in Visual Studio project	
+		-Interfaces created for Workouts and Exercises
+		
+		
+Sprint 5/7/18 - 5/20/18
+	-Hook up ADO calls to database
+	-Unit test data layer
+	
+Results:
+	-
