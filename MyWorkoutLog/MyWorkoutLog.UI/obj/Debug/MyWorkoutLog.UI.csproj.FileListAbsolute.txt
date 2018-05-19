@@ -161,7 +161,6 @@ C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.UI\bin\
 C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.UI\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.UI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.UI\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.UI\bin\roslyn\System.IO.Pipes.AccessControl.dll
 C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.UI\bin\roslyn\System.IO.Pipes.dll
 C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.UI\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\Eric\Documents\Repos\PersonalProjects\MyWorkoutLog\MyWorkoutLog.UI\bin\roslyn\System.Security.AccessControl.dll

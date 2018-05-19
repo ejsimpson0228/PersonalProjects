@@ -16,5 +16,6 @@ namespace MyWorkoutLog.Models.Models
         public bool TracksDistance { get; set; }
         public bool TracksWeight { get; set; }
         public string UserId { get; set; }
+        public int Day { get; set; }
     }
 }

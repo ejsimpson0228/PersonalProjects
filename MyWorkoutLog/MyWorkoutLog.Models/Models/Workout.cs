@@ -14,5 +14,6 @@ namespace MyWorkoutLog.Models.Models
         public DateTime StartDate { get; set; }
         public bool IsCurrent { get; set; }
         public string UserId { get; set; }
+        public List<Exercise> Exercises { get; set; }
     }
 }

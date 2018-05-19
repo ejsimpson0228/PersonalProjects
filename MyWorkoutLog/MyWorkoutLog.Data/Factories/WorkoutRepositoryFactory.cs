@@ -12,7 +12,7 @@ namespace MyWorkoutLog.Data.Factories
 {
     public class WorkoutRepositoryFactory
     {
-        public static IWorkoutRepo GetWorkout()
+        public static IWorkoutRepo GetWorkoutRepo()
         {
             switch (Settings.GetRepositoryType())
             {

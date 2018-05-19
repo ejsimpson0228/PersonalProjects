@@ -16,10 +16,10 @@ CREATE PROCEDURE DbReset as
 
 		SET IDENTITY_INSERT Workout ON
 		INSERT INTO Workout (WorkoutId, WorkoutName, DaysPerWeek, StartDate, IsCurrent, UserId)
-		VALUES (1, 'Beast Destroyer', 4, '2018-03-11', 0, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'), 
+		VALUES (1, 'Beast Destroyer', 4, '2018-03-18', 0, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'), 
 		(2, 'Cardio Madhouse', 3, '2018-03-25', 1, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2'),
 		(3, 'Weakling Featherweights', 1, '2018-03-25', 1, 'ade77a5f-1eb2-41bb-806d-3f2ef0713de9' ),
-		(4, 'Cardio Madhouse', 3, '2018-03-18', 0, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2')
+		(4, 'Cardio Madhouse', 3, '2018-03-11', 0, '8f4b02ca-4134-451c-ab5e-bd73c6a723b2')
 		SET IDENTITY_INSERT Workout OFF
 
 		SET IDENTITY_INSERT Exercise ON

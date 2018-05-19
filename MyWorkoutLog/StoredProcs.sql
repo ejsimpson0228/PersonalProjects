@@ -38,7 +38,7 @@ CREATE PROCEDURE spGetExercisesForWorkout (
 )
 AS 
 	BEGIN
-		SELECT e.* FROM Workout w
+		SELECT e.*, we.[Day] FROM Workout w
 		JOIN WorkoutExercise we ON w.WorkoutId = we.WorkoutId
 		JOIN Exercise e on we.ExerciseId = e.ExerciseId
 		LEFT JOIN ExerciseDetails ed ON e.ExerciseId = ed.ExerciseId
@@ -209,6 +209,23 @@ AS
 	END
 GO
 
+if exists(select * from sys.procedures where name='spGetLastWeeksWorkoutForUser')
+	drop procedure spGetLastWeeksWorkoutForUser
+	go
+
+CREATE PROCEDURE spGetLastWeeksWorkoutForUser  (
+	@UserId NVARCHAR(100)
+)
+AS 
+	BEGIN
+		Select top 1  w.*
+		From Workout w
+		WHERE @UserId = w.UserId
+		AND w.IsCurrent = 0
+		ORDER BY w.StartDate DESC
+			
+	END
+GO
 
 
 

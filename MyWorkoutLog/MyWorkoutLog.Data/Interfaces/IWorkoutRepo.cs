@@ -11,10 +11,10 @@ namespace MyWorkoutLog.Data.Interfaces
     public interface IWorkoutRepo
     {
         Workout GetCurrentWorkoutForUser(string userId);
-        WorkoutExercisesViewModel GetExercisesForWorkout(int workoutId);
+        IEnumerable<Exercise> GetExercisesForWorkout(int workoutId);
         Workout GetLastWorkoutForUser(string userId);
-        List<DateTime> GetWorkoutDatesForUser(string userId);
+        Dictionary<int, DateTime> GetWorkoutDatesForUser(string userId);
         Workout GetHistoricalWorkout(DateTime dateOfWorkout);
-        void MakeWorkoutCurrent(int workoutId);
+        void MakeWorkoutCurrent(int workoutId, string userId);
     }
 }
